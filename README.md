@@ -2,23 +2,34 @@
 
 ## Overview
 
-TODO: Write a project description
+This website is a javascript heavy project where a evil circle, or in this case a pacman eats and asorbs all the bouncing ball generated in the screen. User should use ther arrow keys to move the pacman and said pacman should eat up the bouncing ball. There is a counter in the top corner where it it should count down as more number of balls get eaten. Whenever the bouncing ball collide with eac htoehr it should randomly change color.
+
+## Getting Started
+
+To get started, clone this repository and run the following commands:
+
+```bash
+npm install
+```
+This will install the necessary dependencies for the project.
+
+open in browser by pressing the three lines and cliking open in browser. This makes it easier to see. Then use arrow keys to move the pacman/evil circle.
+
+
 
 ## Sources and Credits
 
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
+ the stroke and stroke style method
+ - “CanvasRenderingContext2D: Stroke() Method - Web APIs | MDN.” MDN Web Docs, https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/stroke.
 
-A simple bulleted list below is sufficient. For example:
+ - “CanvasRenderingContext2D: strokeStyle Property - Web APIs | MDN.” MDN Web Docs, https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeStyle.
 
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
+ help with getting ball counter to work
+ - “Document: getElementById() Method - Web APIs | MDN.” MDN Web Docs,  https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById.
+
+ - “Node: textContent Property - Web APIs | MDN.” MDN Web Docs,  https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent.
+
+
+ Help with getting pacman shape
+  - “Drawing Pacman Shape with Single Arc() Function Call.” Stack Exchange, https://stackoverflow.com/questions/14093400/drawing-pacman-shape-with-single-arc-function-call.
+

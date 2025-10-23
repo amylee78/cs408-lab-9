@@ -161,9 +161,7 @@ class Ball extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists= false;
-         
            ballCount--;
-           
         ballCounter.textContent = ballCount;
         }
       }
@@ -175,7 +173,7 @@ class Ball extends Shape {
 
 const balls = [];
 
-
+//creates an isntance of the evil circle at a random postion in the canvas
 const evilCircle = new EvilCircle(
   random(0, width),
   random(0, height)
@@ -195,8 +193,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
-    ballCount++;
-  ballCounter.textContent = ballCount;
+    ballCount++; //keeps track of how many balls exist
+  ballCounter.textContent = ballCount; //displays the number of balls remaining
 }
 
 function loop() {
@@ -204,6 +202,7 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
+    
     if(ball.exists){
     ball.draw();
     ball.update();
@@ -211,7 +210,7 @@ function loop() {
     }
 
   }
-
+  
   evilCircle.draw();
   evilCircle.checkBounds();
   evilCircle.collisionDetect();
